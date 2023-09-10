@@ -16,8 +16,9 @@ for i in range((len(list))):
         break
     else:
         n = abs(k-list[0])
-        for i in range(len(list)-1):
-            if abs(k-list[0]) > abs(list[i]-k):
+        next = list[0]                  #4-23 = -19
+        for i in range(len(list)-1):    #-19 > 6-4 =2
+            if n > abs(list[i]-k):      
                 n = abs(list[i]-k)
                 next = list[i]
 

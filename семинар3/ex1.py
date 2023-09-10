@@ -41,4 +41,4 @@ shift = int(input("Введите сдвиг: "))
 #or
 
 for i in range (len (lst)):
-    print (lst[(i - shift)], end=', ')
+    print (lst[(i - shift)%len(lst)], end=', ')
