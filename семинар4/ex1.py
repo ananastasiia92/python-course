@@ -15,3 +15,5 @@ for i in dict_count: #заносим в словарь с проверкой
         result_list.append(f'{i}_{dict_count.get(i)-1}')
     else:
         result_list.append(i)
+        
+    print(result_list)

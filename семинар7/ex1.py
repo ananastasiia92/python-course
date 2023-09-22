@@ -10,5 +10,16 @@
 # сначала вычислить самую большую площадь эллипса, а затем найти и сам эллипс, имеющий такую площадь. 
 # Гарантируется, что самая далекая планета ровно одна
 
-import random
+from random import randint as ri
+
+planets = [(ri(1, 10), ri(1, 10)) for i in range(10)]
+print(planets)
+
+planets = set(filter(lambda x: x[0] != x[1], planets))
+print (max (planets, key=lambda x: x[0] * x[1]))
+
+planets = [(planet, planet [0] * planet [1]) for planet in planets]
+print(planets)
+print (max(planets, key=lambda x: x[1])[0])
+
 
